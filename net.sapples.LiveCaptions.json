@@ -52,9 +52,10 @@
             "build-commands" : [
                 "mkdir -p $ONNX_ROOT",
                 "mv onnxruntime-1/* $ONNX_ROOT",
-
                 "mkdir -p $FLATPAK_DEST/lib",
-                "cp $ONNX_ROOT/lib/* $FLATPAK_DEST/lib"
+                "mkdir -p $FLATPAK_DEST/include",
+                "cp -r $ONNX_ROOT/lib/* $FLATPAK_DEST/lib/",
+                "cp -r $ONNX_ROOT/include/* $FLATPAK_DEST/include/"
             ]
         },
 
