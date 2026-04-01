@@ -17,5 +17,5 @@ jobs:
         with:
           bundle: LiveCaptions.flatpak
           branch: stable
-          manifest-path: net.sapples.LiveCaptions
+          manifest-path: net.sapples.LiveCaptions.json
           cache: true
