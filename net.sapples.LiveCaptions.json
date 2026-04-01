@@ -24,6 +24,12 @@
         "*.a"
     ],
     "build-options" : {
+        "arch": {
+            "x86_64": {
+                "cflags": "-O3 -march=skylake",
+                "cxxflags": "-O3 -march=skylake"
+            }
+        },
         "env" : {
             "ONNX_ROOT" : "/app/onnx_root"
         }
